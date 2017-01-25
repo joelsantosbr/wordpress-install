@@ -2,7 +2,7 @@ WORDPRESS INSTALL
 ===================
 
 
-Olá, menu nome é Joel Santos sou desenvolvedor web, criei o **Wordpress install** para facilitar um pouco a minha vida.
+Olá, meu nome é Joel Santos sou desenvolvedor web, criei o **Wordpress install** para facilitar um pouco a minha vida.
 
 ----------
 
