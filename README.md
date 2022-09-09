@@ -1,16 +1,11 @@
-WORDPRESS INSTALL
+Wordpress install
 ===================
-
-
-Olá, meu nome é Joel Santos sou desenvolvedor web, criei o **Wordpress install** para facilitar um pouco a minha vida.
-
-----------
-
+![image](https://img.shields.io/badge/maintained-no!%20(as%20of%202017)-red)
 
 Sobre
 -------------
 
-Wordpress Install é um script que criei para funcionar em máquinas linux, ele ligeiramente faz a instalação e configuração do wordpress em seu servidor apache(localhost) em menos de 30 segundos eu garanto!
+Wordpress Install é um script que que está funcionando em linux, ele ligeiramente faz a instalação e configuração do wordpress em seu servidor apache(localhost).
 
 > **Nota: Requisitos**
 
@@ -22,9 +17,9 @@ Wordpress Install é um script que criei para funcionar em máquinas linux, ele 
 
 #### <i class="icon-file"></i> Configuração
 
-Não vou mostrar como instalar o Apache, MySQL, PHP, devido ao grande número de tutoriais na internet para isso.
 
-Com a pilha instalada devemos instalar e configurar o WP-CLI (http://wp-cli.org/), com o seu terminal aberto, faça os comandos.
+
+Instalar e configurar o WP-CLI (http://wp-cli.org/), com o seu terminal aberto, rode os comandos.
 
 ```
 # Ir para o diretório home.
@@ -45,7 +40,7 @@ $ sudo mv wp-cli.phar /usr/local/bin/wp
 # Teste novamente com o alias do wp-cli
 $ wp --info
 
-# Deve retornar mais o menos isso
+# Deve ser retornado algo parecido com isso:
 PHP binary:    /usr/bin/php5
 PHP version:    5.5.9-1ubuntu4.14
 php.ini used:   /etc/php5/cli/php.ini
@@ -67,9 +62,9 @@ $ mv wordpress-install/wpinstall.sh ~/scripts
 $ chmod a+x ~/scripts/wpinstall.sh
 ```
 
-Agora vamos configurar o arquivo wpinstall.sh para nossas configurações, abra-o com qualquer editor de texto, de uma breve lida no código é bem simples e está comentado.
+Agora vamos configurar o arquivo wpinstall.sh para nossas configurações, abra-o com qualquer editor de texto.
 
-Devemos configurar o local do diretório do apache no meu caso é /srv/http mais várias distros o apache usa /var/www/html ou /var/www deixo a seu critério descobrir.
+Devemos configurar o local do diretório do apache no meu caso é /srv/http mais várias distros o apache usa /var/www/html ou /var/www
 ```
 Linha 26: mkdir /srv/http/$slug
 Linha 27: cd /srv/http/$slug
@@ -85,7 +80,7 @@ wpuser='USUARIO-ADMIN-WORDPRESS'
 wppass='SENHA-ADMIN-WORDPRESS'
 wpemail='user@example.org'
 ```
-Muito bom, estamos quase terminando falta criar um alias para executarmos esse script em nosso terminal.
+Crie um alias para executarmos esse script em nosso terminal.
 ```
 # Acrescente no final do arquivo .bashrc a linha "alias wordpress='~/scripts/wpinstall.sh'" sem as aspas duplas, eu usei o editor nano para isso.
 
@@ -102,6 +97,4 @@ Também criei o alias **cli** para acessar minha pasta de projetos e **server** 
 
 Faça um bom proveito para novos projetos em wordpress.
 
-Usuários windows fico devendo algo parecido kkkk.
-
-Abraços.
+Para usuários windows fico devendo.
